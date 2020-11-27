@@ -1,0 +1,16 @@
+.block-action {
+  padding-top: 50px;
+  text-align: center;
+
+  @include media-md {
+    padding-top: 60px;
+  }
+
+  @include media-lg {
+    padding-top: 80px;
+  }
+
+  @include media-xl {
+    padding-top: 90px;
+  }
+}

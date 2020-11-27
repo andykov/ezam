@@ -1,0 +1,129 @@
+.project-item {
+  &_head {
+    position: relative;
+
+    h2 {
+      margin-bottom: 10px;
+
+      @include media-md {
+        margin-bottom: 15px;
+      }
+
+      @include media-xl {
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      color: $black;
+    }
+
+    a {
+      color: $blue;
+      text-decoration: underline;
+
+      &:hover {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+
+    @include font($fz: 20px, $lh: 32px, $fw: 400);
+
+    @include media-md {
+      @include font($fz: 22px, $lh: 35.2px, $fw: 400);
+    }
+    @include media-lg {
+      @include font($fz: 24px, $lh: 38.4px, $fw: 400);
+    }
+  }
+
+  &_logo {
+    padding: 20px;
+    background-color: $light-gray;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    @include media-md {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 45px;
+    }
+
+    @include media-xl {
+      width: 265px;
+      height: 265px;
+      position: absolute;
+      top: 0;
+      right: calc(100% + 95px);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.content {
+  color: $black;
+
+  h3 {
+    font-size: 32px;
+    padding-top: 60px;
+
+    @include media-md {
+      margin-top: 70px;
+    }
+
+    @include media-lg {
+      margin-top: 80px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  img {
+    height: 640px;
+    width: 100%;
+    object-fit: cover;
+    margin: 80px 0 20px;
+
+    @include media-md {
+      margin: 100px 0 30px;
+    }
+
+    @include media-lg {
+      margin: 120px 0 40px;
+    }
+
+    @include media-xl {
+      margin: 140px 0 60px;
+    }
+  }
+
+  ul,
+  ol {
+    margin: 20px 0 0;
+    padding-left: 18px;
+  }
+
+  ol {
+    counter-reset: num;
+
+    li {
+      padding-left: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 26px;
+      }
+
+      &::marker {
+        color: $blue;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.popup-container--nav {
+  .popup {
+    padding: 50px 10px;
+    @include media-md {
+      padding: 70px 20px;
+      // display: none;
+    }
+
+    .popup-close-btn {
+      top: 15px;
+      right: auto;
+      left: 10px;
+
+      &.cross:after,
+      &.cross:before {
+        left: 9px;
+        height: 20px;
+
+        @include media-md {
+          height: 25px;
+        }
+      }
+
+      @include media-md {
+        left: 20px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .nav {
+    display: flex;
+    &_sub-item {
+      &:hover,
+      &:active {
+        text-decoration: underline;
+        color: $black;
+      }
+      .active {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+    a {
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.popup-open {
+  overflow: hidden;
+}
+
+.popup-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: opacity $transition-time;
+  display: none;
+
+  &__inner {
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    overflow: hidden;
+  }
+}
+
+.popup {
+  width: 640px;
+  max-width: 100%;
+  background: white;
+  box-shadow: -20px 0 40px 0 rgba(188, 200, 213, 0.25);
+  position: relative;
+  padding: 45px 30px 35px;
+  transition-duration: $transition-time;
+  transform: translateX(100%);
+
+  @include media-sm {
+    padding-top: 60px;
+  }
+
+  &--success {
+    text-align: center;
+  }
+
+  &.visible {
+    transform: translateX(0);
+  }
+
+  &__content {
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  .btn {
+    &--file {
+      padding-left: 0;
+    }
+  }
+
+  @include media-xs {
+    padding: 70px 60px;
+  }
+
+  @include media-sm {
+    .btn {
+      &--file {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @include media-xxl {
+    width: 960px;
+    padding: 100px 240px 100px 120px;
+
+    &__close {
+      top: 50px;
+      right: 50px;
+    }
+  }
+}

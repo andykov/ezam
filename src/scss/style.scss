@@ -1,0 +1,33 @@
+@import './mixins';
+
+@import './base';
+
+@import './elements/btn';
+@import './elements/breadcrumb';
+@import './elements/popup';
+@import './elements/file-input';
+
+@import './blocks/page-head';
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/footer';
+@import './blocks/card';
+@import './blocks/projects';
+@import './blocks/projects-nav';
+@import './blocks/project-item';
+@import './blocks/form-request';
+@import './blocks/we-work';
+@import './blocks/num-block';
+@import './blocks/popup-nav';
+@import './blocks/clients';
+@import './blocks/block-action';
+
+@import './global/utils';
+
+.project-nav {
+  ul {
+    &.hide {
+      display: none;
+    }
+  }
+}

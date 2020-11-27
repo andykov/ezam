@@ -1,0 +1,47 @@
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+.pb-0 {
+  padding-bottom: 0px !important;
+}
+
+@include media-xl {
+  .pb-160-xl {
+    padding-bottom: 160px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-gray {
+  background-color: $light-gray;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.mw-450 {
+  max-width: 450px;
+}
+
+@include media-xl {
+  .gap-80 {
+    grid-gap: 80px 80px;
+  }
+  .gap-120 {
+    grid-gap: 100px 120px;
+  }
+  .gap-150 {
+    grid-gap: 100px 150px;
+  }
+}

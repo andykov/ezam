@@ -1,0 +1,124 @@
+.num-block {
+  &--h,
+  &--v {
+    counter-reset: num;
+
+    .num-block_title {
+      padding-top: 25px;
+      border-top: 1px solid rgba($gray, 0.5);
+
+      &:before {
+        counter-increment: num;
+        content: '0' counter(num);
+      }
+    }
+  }
+
+  &--h {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+
+    @include media-md {
+      grid-gap: 60px 50px;
+    }
+    @include media-lg {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 80px 60px;
+    }
+    @include media-xl {
+      grid-gap: 80px 80px;
+    }
+
+    .num-block_item {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+
+      @include media-lg {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px 60px;
+        padding-top: 75px;
+      }
+      @include media-xl {
+        grid-gap: 80px;
+      }
+    }
+
+    .num-block_title {
+      margin-bottom: 0;
+      @include media-lg {
+        padding-left: 95px;
+      }
+      @include media-xl {
+        padding-left: 130px;
+      }
+    }
+
+    .num-block_title:before {
+      display: block;
+      margin-bottom: 20px;
+
+      @include media-lg {
+        margin-bottom: 0;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .num-block_text {
+      margin-top: -6px;
+    }
+  }
+
+  &--v {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+
+    @include media-md {
+      grid-gap: 60px 50px;
+    }
+    @include media-lg {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 80px 60px;
+    }
+    @include media-xl {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 100px 120px;
+    }
+
+    .num-block_title {
+      &:before {
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+    }
+    .num-block_text {
+      padding-top: 15px;
+    }
+  }
+
+  &--col-3 {
+    @include media-xl {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 100px 150px;
+    }
+  }
+
+  &_item {
+    position: relative;
+    padding-top: 48px;
+  }
+
+  &_title {
+    @include font($fz: $h3, $lh: 31.2px, $fw: 700);
+    color: $black;
+
+    &:before {
+      color: $blue;
+      display: block;
+      @include font($fz: 18px, $lh: 1, $fw: 700);
+    }
+  }
+}

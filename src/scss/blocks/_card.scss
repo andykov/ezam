@@ -1,0 +1,26 @@
+@import './mixins';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &_image {
+    &--icon,
+    .icon {
+      height: 72px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &--preview {
+    }
+  }
+  &_title {
+    padding-top: 30px;
+  }
+  &_text {
+    padding-top: 15px;
+  }
+}

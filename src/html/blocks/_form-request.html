@@ -1,0 +1,37 @@
+<form action="">
+  <div class="input-field-group">
+    <label class="input-field">
+      <input type="text" name="name" class="input-field_control" />
+      <span class="input-field_label">Ваше имя*</span>
+    </label>
+    <label class="input-field error">
+      <input type="text" name="email" class="input-field_control" />
+      <span class="error-msg">Обязательное поле</span>
+      <span class="input-field_label">Ваш e–mail</span>
+    </label>
+    <label class="input-field">
+      <textarea name="comment" class="input-field_control"></textarea>
+      <span class="input-field_label">Опишите задачу</span>
+    </label>
+    <div class="input-file-wrap">
+      <div class="input-file-wrap__input">
+        <input type="file" name="file" class="input-control" multiple="" />
+        <div class="input-file-wrap__title">Прикрепить файл</div>
+      </div>
+      <div class="input-file-wrap__holder">
+        <span class="cross input-file-wrap__rm-btn"></span>
+        <span class="input-file-wrap__title" data-toggle="filename"></span>
+      </div>
+    </div>
+    <div class="input-checkbox">
+      <label class="input-checkbox_name">
+        <input class="input-checkbox_input" type="checkbox" checked />
+        <span class="input-checkbox_name-text"
+          >Настоящим подтверждаю, что я ознакомлен и согласен с политикой
+          обработки персональных данных</span
+        >
+      </label>
+    </div>
+    <button class="btn btn--blue btn--fw" type="submit">Отправить</button>
+  </div>
+</form>

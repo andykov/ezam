@@ -1,0 +1,109 @@
+a {
+  color: inherit;
+  text-decoration: none;
+  transition-duration: $transition-time;
+
+  &:not(.btn) {
+    color: $black;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $btn-active;
+    }
+  }
+
+  &.active {
+    color: $blue;
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $black;
+}
+
+h1,
+.h1 {
+  font-size: $h1-xs;
+  font-weight: bold;
+  line-height: (41.6px / $h1-xs);
+
+  @include media-md {
+    font-size: $h1-md;
+    line-height: (57.2px / $h1-md);
+  }
+
+  @include media-lg {
+    font-size: $h1-lg;
+    line-height: (62.4px / $h1-lg);
+  }
+
+  @include media-xl {
+    font-size: $h1;
+    line-height: (62.4px / $h1);
+  }
+}
+h2,
+.h2 {
+  font-size: $h2-xs;
+  font-weight: bold;
+  line-height: (36.4px / $h2-xs);
+  margin-bottom: 60px;
+
+  @include media-md {
+    font-size: $h2-md;
+    line-height: (41.6px / $h2-md);
+  }
+
+  @include media-lg {
+    font-size: $h2-lg;
+    line-height: (44.2px / $h2-lg);
+    margin-bottom: 70px;
+  }
+
+  @include media-xl {
+    font-size: $h2;
+    line-height: (46.8px / $h2);
+  }
+}
+h3,
+.h3 {
+  font-size: $h3-xs;
+  font-weight: bold;
+  line-height: (26px / $h3-xs);
+  @include media-md {
+    font-size: $h3-md;
+    line-height: (28.6px / $h3-md);
+  }
+  @include media-lg {
+    font-size: $h3;
+    line-height: (31.2px / $h3);
+  }
+}
+h4,
+.h4 {
+  font-size: $h4-xs;
+  font-weight: normal;
+  line-height: (26px / $h4-xs);
+  margin-top: 40px;
+
+  @include media-lg {
+    font-size: $h4;
+    line-height: (28.6px / $h4);
+  }
+}
+
+p {
+  margin-bottom: 20px;
+}

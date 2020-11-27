@@ -1,0 +1,33 @@
+.we-work {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+
+  &_item {
+    background-color: #fff;
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_title {
+    font-weight: 600;
+    padding-top: 110px;
+
+    @include media-xl {
+      padding-top: 155px;
+    }
+  }
+
+  @include media-md {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+  @include media-lg {
+    grid-gap: 40px 60px;
+  }
+  @include media-xl {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>ЕЗАМ - Проекты</title>
+  </head>
+  <body>
+    @@include('blocks/_header.html')
+    <main>
+      <section class="page-head">
+        <div class="container">
+          <div class="page-head_breadcrumbs">
+            <div class="breadcrumb">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li class="is-active">
+                  <a href="#">Проекты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-head_content">
+            <div class="page-head_row pb-0">
+              <h1 class="page-head_title">Проекты</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="projects">
+          <div class="projects-nav">
+            <span class="projects-nav_current"></span>
+            <ul>
+              <li><a href="">Все проекты</a></li>
+              <li><a class="active" href="">Таргетированная реклама</a></li>
+              <li><a href="">Контекстная реклама</a></li>
+              <li><a href="">SEO-продвижение сайта для B2B</a></li>
+              <li><a href="">SEO-продвижение за рубежом</a></li>
+            </ul>
+          </div>
+          <div class="projects-list grid-2">
+            <div class="project-preview">
+              <a href="project-item.html" class="project-preview_link">
+                <div
+                  class="project-preview_img"
+                  style="background-image: url('img/content/project-1.png')"
+                ></div>
+                <div class="project-preview_title">
+                  Сайт сервиса по защите брендов от копирования Kvils
+                </div>
+                <span class="project-preview_more">Подробнее о проекта</span>
+              </a>
+            </div>
+            <div class="project-preview">
+              <a href="project-item.html" class="project-preview_link">
+                <div
+                  class="project-preview_img"
+                  style="background-image: url('img/content/project-1.png')"
+                ></div>
+                <div class="project-preview_title">
+                  Сайт сервиса по защите брендов от копирования Kvils
+                </div>
+                <span class="project-preview_more">Подробнее о проекта</span>
+              </a>
+            </div>
+            <div class="project-preview">
+              <a href="project-item.html" class="project-preview_link">
+                <div
+                  class="project-preview_img"
+                  style="background-image: url('img/content/project-1.png')"
+                ></div>
+                <div class="project-preview_title">
+                  Сайт сервиса по защите брендов от копирования Kvils
+                </div>
+                <span class="project-preview_more">Подробнее о проекта</span></a
+              >
+            </div>
+            <div class="project-preview">
+              <a href="project-item.html" class="project-preview_link">
+                <div
+                  class="project-preview_img"
+                  style="background-image: url('img/content/project-1.png')"
+                ></div>
+                <div class="project-preview_title">
+                  Сайт сервиса по защите брендов от копирования Kvils
+                </div>
+                <span class="project-preview_more">Подробнее о проекта</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('blocks/_form-request-wrap.html')
+    </main>
+    @@include('blocks/_footer.html')
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>ЕЗАМ - Контакты</title>
+  </head>
+  <body>
+    @@include('blocks/_header.html')
+    <main>
+      <section class="page-head">
+        <div class="container">
+          <div class="page-head_breadcrumbs">
+            <div class="breadcrumb">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li class="is-active">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-head_cols">
+            <div class="page-head_content">
+              <div class="page-head_row">
+                <h1 class="page-head_title">Звоните и пишите</h1>
+                <div class="page-head_text">
+                  Мы с удовольствием обсудим вашу задачу и найдем решение. Для
+                  связи с нами используйте форму ниже или контактную информацию.
+                </div>
+              </div>
+            </div>
+            <ul class="contacts">
+              <li><a href="tel:+78126451285">+7 (812) 645-12-85</a></li>
+              <li>
+                <a href="mailto:info@ilyakiselev.ru">info@ilyakiselev.ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      @@include('blocks/_form-request-wrap.html')
+    </main>
+    @@include('blocks/_footer.html')
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

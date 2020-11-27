@@ -1,0 +1,51 @@
+.breadcrumb {
+  font-size: 1rem;
+  white-space: nowrap;
+  a {
+    font-size: 14px;
+    font-weight: normal;
+    align-items: center;
+    color: $gray;
+    display: flex;
+    justify-content: center;
+    padding: 0 0.45em;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  li {
+    align-items: center;
+    display: flex;
+    line-height: 1;
+
+    &:first-child a {
+      padding-left: 0;
+    }
+
+    &.is-active a {
+      color: $black;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    & + li::before {
+      color: $gray;
+      content: '\0002f';
+      line-height: 1;
+      font-size: 14px;
+    }
+  }
+
+  ol,
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

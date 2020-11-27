@@ -1,0 +1,52 @@
+// Colors
+$black: #191d25;
+$gray: #575757;
+$blue: #0f6cfa;
+$light-gray: #f2f2f2;
+$btn-active: #0c57ca;
+
+// Fonts
+$font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu',
+  'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$h1-xs: 32px;
+$h1-md: 44px;
+$h1-lg: 48px;
+$h1: 52px;
+
+$h2-xs: 28px;
+$h2-md: 32px;
+$h2-lg: 34px;
+$h2: 36px;
+
+$h3-xs: 20px;
+$h3-md: 22px;
+$h3: 24px;
+
+$h4-xs: 20px;
+$h4: 22px;
+
+// Grid
+$grid-columns: 12;
+$grid-gutter-width: 40px;
+
+// Sizes
+$screen-xs: 0;
+$screen-sm: 480px;
+$screen-md: 640px;
+$screen-lg: 1000px;
+$screen-xl: 1540px;
+$screen-xxl: 1800px;
+
+$container-sm: 100%;
+$container-md: 100%;
+$container-lg: $screen-lg;
+$container-xl: $screen-xl;
+$container-xxl: $screen-xxl;
+
+// Other
+$border-radius: 2px;
+$border-color: rgba($gray, 0.3);
+$opacity: 0.7;
+$transition-time: 0.3s;

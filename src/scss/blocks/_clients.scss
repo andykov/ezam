@@ -1,0 +1,24 @@
+.clients {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+
+  @include media-md {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  @include media-lg {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px 60px;
+  }
+  @include media-xl {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 100px 120px;
+  }
+
+  &_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

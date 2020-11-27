@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'SFProDisplay', $font-family;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: (25.6px / 16px);
+  min-width: 320px;
+  color: $gray;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+
+  @include media-lg {
+    font-size: 18px;
+    line-height: (28.8px / 18px);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: none;
+
+  &.btn {
+    outline: none;
+  }
+}
+
+.section {
+  padding: 80px 0;
+  @include media-md {
+    padding: 100px 0;
+  }
+  @include media-lg {
+    padding: 120px 0;
+  }
+  @include media-xl {
+    padding: 140px 0;
+  }
+}
+
+.container {
+  @include container(
+    $xs-grid-gutter: $grid-gutter-width / 2,
+    $sm-grid-gutter: $grid-gutter-width / 2,
+    $md-grid-gutter: $grid-gutter-width,
+    $xxl-grid-gutter: null
+  );
+}
+
+.container-narrow {
+  max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include media-md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+[class*='col-'] {
+  & > p {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ul.contacts,
+ul.policy {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section {
+  &.bg-black {
+    .num-block_title,
+    .num-block_title:before {
+      color: rgba($color: #fff, $alpha: 1);
+    }
+    .num-block_text {
+      color: rgba($color: #fff, $alpha: 0.8);
+    }
+  }
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.cross {
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  &:after,
+  &:before {
+    position: absolute;
+    left: 12px;
+    content: ' ';
+    height: 25px;
+    width: 1px;
+    background-color: $black;
+    transition-duration: 0.3s;
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+}
+
+.error-msg {
+  padding: 3px 0 0;
+  color: #f21137;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 10px;
+}
+
+.copyright {
+  line-height: (24px / 16px);
+  display: inline-block;
+}

@@ -1,0 +1,46 @@
+@import './mixins';
+
+.header {
+  padding: 14px 0;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+
+  @include media-lg {
+    padding: 19px 0;
+  }
+
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 66px;
+
+    @include media-md {
+      max-width: 100%;
+    }
+
+    @include media-lg {
+      position: static;
+      left: auto;
+      transform: none;
+    }
+  }
+
+  .nav-mobile-trigger {
+    margin-left: -5px;
+
+    @include media-lg {
+      display: none;
+    }
+  }
+}
