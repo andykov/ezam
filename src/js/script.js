@@ -71,8 +71,6 @@ function mobileProjectNavToggle(show) {
     const active = current.parentElement.querySelector('.active');
     const text = active.textContent;
     current.textContent = active.textContent;
-  } else {
-    current.textContent = '';
   }
 }
 

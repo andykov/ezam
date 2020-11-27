@@ -244,8 +244,6 @@ function mobileProjectNavToggle(show) {
     var active = current.parentElement.querySelector('.active');
     var text = active.textContent;
     current.textContent = active.textContent;
-  } else {
-    current.textContent = '';
   }
 } // Show children nav
 
