@@ -1,4 +1,15 @@
 .project-item {
+  padding-bottom: 100px;
+  @include media-md {
+    padding-bottom: 120px;
+  }
+  @include media-lg {
+    padding-bottom: 140px;
+  }
+  @include media-xl {
+    padding-bottom: 160px;
+  }
+
   &_head {
     position: relative;
 
@@ -61,6 +72,69 @@
       top: 0;
       right: calc(100% + 95px);
       margin-bottom: 0;
+    }
+  }
+
+  &_result {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    padding-top: 50px;
+
+    @include media-md {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 60px 50px;
+    }
+    @include media-lg {
+      grid-gap: 80px 40px;
+    }
+    @include media-xl {
+      padding-top: 70px;
+    }
+
+    &-col {
+      p {
+        font-size: 16px;
+        color: $gray;
+        line-height: 20.8px;
+      }
+
+      strong,
+      span {
+        display: inline-block;
+        line-height: 1;
+        color: $black;
+      }
+
+      strong {
+        font-size: 42px;
+        font-weight: 700;
+        margin-right: 10px;
+
+        @include media-md {
+          font-size: 46px;
+        }
+        @include media-lg {
+          font-size: 48px;
+        }
+        @include media-lg {
+          font-size: 52px;
+        }
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        color: $black;
+
+        @include media-md {
+          font-size: 22px;
+        }
+        @include media-lg {
+          font-size: 24px;
+        }
+      }
     }
   }
 }

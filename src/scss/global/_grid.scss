@@ -2,22 +2,6 @@ $grid-gutter-width-60: 60px;
 $grid-gutter-width-80: 80px;
 $grid-gutter-width-120: 120px;
 
-.flex {
-  display: flex;
-
-  &-sb {
-    justify-content: space-between;
-  }
-
-  &-ac {
-    align-items: center;
-  }
-
-  &-align-end {
-    align-items: flex-end;
-  }
-}
-
 .grid-2,
 .grid-3,
 .grid-4 {
@@ -64,5 +48,8 @@ $grid-gutter-width-120: 120px;
   @include media-md {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
+  }
+  @include media-xl {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

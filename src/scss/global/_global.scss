@@ -63,13 +63,14 @@ button {
 }
 
 .container-narrow {
-  max-width: 790px;
+  max-width: 810px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
 
   @include media-md {
+    max-width: 830px;
     padding-left: 20px;
     padding-right: 20px;
   }

@@ -1,0 +1,49 @@
+@import './mixins';
+
+.text-blocks {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 60px 0;
+
+  @include media-md {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px 40px;
+  }
+  @include media-lg {
+    grid-gap: 100px 60px;
+  }
+  @include media-xl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_image {
+    height: 72px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_cont {
+    padding-top: 20px;
+    text-align: center;
+    text-align: center;
+
+    h3,
+    h4 {
+      margin-top: 0;
+    }
+
+    @include media-md {
+      padding-top: 35px;
+    }
+
+    @include media-xl {
+      padding-top: 45px;
+    }
+  }
+}

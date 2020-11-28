@@ -34,6 +34,10 @@
   max-width: 450px;
 }
 
+.fs-28 {
+  font-size: 28px;
+}
+
 @include media-xl {
   .gap-80 {
     grid-gap: 80px 80px;
@@ -43,5 +47,21 @@
   }
   .gap-150 {
     grid-gap: 100px 150px;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-sb {
+    justify-content: space-between;
+  }
+
+  &-ac {
+    align-items: center;
+  }
+
+  &-align-end {
+    align-items: flex-end;
   }
 }
