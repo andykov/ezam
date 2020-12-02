@@ -25,6 +25,11 @@ textarea {
   border-radius: 0;
 }
 
+.input-field textarea {
+  height: 55px;
+  resize: none;
+}
+
 .input-field {
   background-color: transparent;
   margin-bottom: 25px;
@@ -64,7 +69,7 @@ textarea {
   &.filled {
     .input-field_label {
       font-size: 10px;
-      transform: translateY(-85%);
+      top: 15px;
     }
   }
 

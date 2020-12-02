@@ -99,6 +99,12 @@
     }
   }
 
+  &--col-2 {
+    @include media-xl {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   &--col-3 {
     @include media-xl {
       grid-template-columns: repeat(3, 1fr);

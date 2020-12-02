@@ -8,69 +8,65 @@
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <div class="header_inner">
-      <div
-        class="nav-mobile-trigger hamburger"
-        data-toggle="modal"
-        data-target="popup-nav"
-      >
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
-        </div>
+  <div class="header_inner">
+    <div
+      class="nav-mobile-trigger hamburger"
+      data-toggle="modal"
+      data-target="popup-nav"
+    >
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
       </div>
-      <a href="index.html" class="logo">
-        <img src="img/logo-ezam.svg" alt="EZAM" />
-      </a>
-      <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_item" data-child-nav>
-            <a href="#">Услуги</a>
-            <div class="nav_dropdown">
-              <ul class="nav_sub-list">
-                <li class="nav_sub-item">
-                  <a href="service-targeting.html">Таргетированная реклама</a>
-                </li>
-                <li class="nav_sub-item">
-                  <a href="service-context.html">Контекстная реклама</a>
-                </li>
-                <li class="nav_sub-item">
-                  <a class="active" href="service-seo-b2b.html"
-                    >SEO-продвижение сайта для B2B</a
-                  >
-                </li>
-                <li class="nav_sub-item">
-                  <a href="service-seo-inter.html"
-                    >SEO-продвижение за рубежом</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav_item">
-            <a href="projects.html">Проекты</a>
-          </li>
-          <li class="nav_item">
-            <a href="about.html">О нас</a>
-          </li>
-          <li class="nav_item">
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <ul class="contacts">
-          <li><a href="tel:+78126451285">+7 (812) 645-12-85</a></li>
-          <li><a href="mailto:info@ilyakiselev.ru">info@ilyakiselev.ru</a></li>
-        </ul>
-      </nav>
-      <button
-        type="button"
-        class="btn btn--sm"
-        data-toggle="modal"
-        data-target="popup-form"
-      >
-        Стать клиентом
-      </button>
     </div>
+    <a href="index.html" class="logo">
+      <img src="img/logo-ezam.svg" alt="EZAM" />
+    </a>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item" data-child-nav>
+          <a href="#">Услуги</a>
+          <div class="nav_dropdown">
+            <ul class="nav_sub-list">
+              <li class="nav_sub-item">
+                <a href="service-targeting.html">Таргетированная реклама</a>
+              </li>
+              <li class="nav_sub-item">
+                <a href="service-context.html">Контекстная реклама</a>
+              </li>
+              <li class="nav_sub-item">
+                <a class="active" href="service-seo-b2b.html"
+                  >SEO-продвижение сайта для B2B</a
+                >
+              </li>
+              <li class="nav_sub-item">
+                <a href="service-seo-inter.html">SEO-продвижение за рубежом</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_item">
+          <a href="projects.html">Проекты</a>
+        </li>
+        <li class="nav_item">
+          <a href="about.html">О нас</a>
+        </li>
+        <li class="nav_item">
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <ul class="contacts">
+        <li><a href="tel:+78126451285">+7 (812) 645-12-85</a></li>
+        <li><a href="mailto:info@ilyakiselev.ru">info@ilyakiselev.ru</a></li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="btn btn--sm"
+      data-toggle="modal"
+      data-target="popup-form"
+    >
+      Стать клиентом
+    </button>
   </div>
 </header>
 
@@ -93,6 +89,18 @@
       </div>
     </section>
     <main>
+      <div class="section container">
+        <div class="nav-tabs">
+          <a href="#" data-tab="1" class="nav-tab active">Tab 1</a>
+          <a href="#" data-tab="2" class="nav-tab">Tab 2</a>
+          <a href="#" data-tab="3" class="nav-tab">Tab 3</a>
+        </div>
+        <div class="tab-content">
+          <div data-tab-content="1" class="tab-pane active">Tab content 1</div>
+          <div data-tab-content="2" class="tab-pane">Tab content 2</div>
+          <div data-tab-content="3" class="tab-pane">Tab content 3</div>
+        </div>
+      </div>
       <section class="section">
         <div class="container">
           <h2 class="grid-3">Методы, которые мы используем</h2>
@@ -309,7 +317,7 @@
             </div>
           </div>
           <h2>Этапы сотрудничества</h2>
-          <div class="num-block num-block--v">
+          <div class="num-block num-block--v num-block--col-2 gap-80">
             <div class="num-block_item">
               <div class="num-block_title h3">Работаем по всей России</div>
               <div class="num-block_text">
@@ -365,7 +373,7 @@
       <span class="input-field_label">Ваш e–mail</span>
     </label>
     <label class="input-field">
-      <textarea name="comment" class="input-field_control"></textarea>
+      <textarea name="comment" class="input-field_control" rows="1"></textarea>
       <span class="input-field_label">Опишите задачу</span>
     </label>
     <div class="input-file-wrap">
@@ -442,7 +450,7 @@
       <span class="input-field_label">Ваш e–mail</span>
     </label>
     <label class="input-field">
-      <textarea name="comment" class="input-field_control"></textarea>
+      <textarea name="comment" class="input-field_control" rows="1"></textarea>
       <span class="input-field_label">Опишите задачу</span>
     </label>
     <div class="input-file-wrap">
