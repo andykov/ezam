@@ -68,7 +68,7 @@ function movingCloneNav(el, remove) {
     let clone = nav.cloneNode(true);
     popupContent.appendChild(clone);
     let dropdown = popup.querySelector('[data-child-nav]');
-    dropdown.classList.add('show');
+    // dropdown.classList.add('show');
   }
 }
 
@@ -97,7 +97,6 @@ if (navItems.length) {
   navItems.forEach(function (item) {
     if (isTouchDevice()) {
       item.addEventListener('click', function (e) {
-        console.log(1);
         e.preventDefault();
         item.classList.toggle('show');
       });
@@ -107,10 +106,15 @@ if (navItems.length) {
         item.classList.add('show');
       });
       item.addEventListener('mouseleave', function (e) {
-        console.log(4);
         e.preventDefault();
         item.classList.remove('show');
       });
     }
+  });
+
+  document.querySelectorAll('.nav_dropdown').forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
   });
 }

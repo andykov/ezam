@@ -2825,15 +2825,6 @@ form .input-checkbox_name-text {
     margin-bottom: 20px;
   }
 
-  .project-item_logo {
-    width: 265px;
-    height: 265px;
-    position: absolute;
-    top: 0;
-    right: calc(100% + 95px);
-    margin-bottom: 0;
-  }
-
   .project-item_result {
     padding-top: 70px;
   }
@@ -2926,7 +2917,7 @@ form .input-checkbox_name-text {
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   .popup {
     width: 960px;
     padding: 100px 240px 100px 120px;
@@ -2935,6 +2926,15 @@ form .input-checkbox_name-text {
   .popup__close {
     top: 50px;
     right: 50px;
+  }
+
+  .project-item_logo {
+    width: 265px;
+    height: 265px;
+    position: absolute;
+    top: 0;
+    right: calc(100% + 95px);
+    margin-bottom: 0;
   }
 }
 

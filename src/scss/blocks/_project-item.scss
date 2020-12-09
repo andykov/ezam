@@ -65,7 +65,13 @@
       margin-bottom: 45px;
     }
 
-    @include media-xl {
+    // @media screen and (min-width: 1400px) {
+    //   width: 160px;
+    //   height: 160px;
+    //   margin-bottom: 45px;
+    // }
+
+    @include media-xxl {
       width: 265px;
       height: 265px;
       position: absolute;
